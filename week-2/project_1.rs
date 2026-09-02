@@ -1,0 +1,11 @@
+fn main(){
+	let p:f64 = 520_000_000.0;
+	let r:f64 = 10.0;
+	let n:f64 = 5.0;
+
+	let a = p * ( 1.0 + (r / 100.0)).powf(n);
+	println!("Amount is equals to {:.2}.", a);
+	let ci = a - p;
+	println!("Compund intrest is equals to {:.2}.", ci);
+
+}
