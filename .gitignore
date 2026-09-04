@@ -3,5 +3,5 @@
 *.pdb
 *.dll
 
-# Rust compilation folder (if you use Cargo later)
+#should make my submition more neat and remove the .exe and .pdb files. Still learning how it works 
 target/
