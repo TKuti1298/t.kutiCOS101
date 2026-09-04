@@ -1,0 +1,7 @@
+# Compiled binary files
+*.exe
+*.pdb
+*.dll
+
+# Rust compilation folder (if you use Cargo later)
+target/
