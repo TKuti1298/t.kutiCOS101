@@ -10,6 +10,9 @@ fn main() {
     println!("E Eba & Egusi Soup N2,000");
     println!("W white Rice & Stew N2,500");
 
+let mut total:u32 = 0;
+
+loop{
 let mut food = String::new();
 println!("What would you like to eat?");
 io::stdin().read_line(&mut food).expect("Failed to understand choice enter proper format");
@@ -28,11 +31,22 @@ let price = match food.as_str() {
     "W" => 2500,
     _ => {
         println!("Invalid choice");
-        return;
+        continue;
     }
 };
 
-let total:u32 =price * quantity;
+total = total + price * quantity;
+println!("Your current total is N{}",total);
+
+println!("Would you like anything else? (Y/N)");
+let mut again = String::new();
+io::stdin().read_line(&mut again).expect("Failed to read input");
+
+if again.trim().to_uppercase() != "Y" {
+    break;
+   }
+}
+
 println!("Your current total is N{}",total);
 
 if total > 10000{ 
@@ -40,6 +54,7 @@ let new_total = total - (total*5/100);
 println!("Congrats you were able to get a discount!");
 println!("Your new total is N{}",new_total);
 }
+
 println!("\n");
 println!("Thank you for comiing to Mama Nkechi's wonderous deligths.\nDo come again!");
 }
