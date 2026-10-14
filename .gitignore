@@ -3,5 +3,7 @@
 *.pdb
 *.dll
 
-#should make my submition more neat and remove the .exe and .pdb files. Still learning how it works 
+#should make my submition more neat and remove the .exe and .pdb files. Still learning how it works. 
+#PLEASE NOTE THAT THIS WAS MADE POSSIBLE BY BY BEST FRIEND CLAUDE WHO IS STILL TEACHING ME HOW THIS WORKS THANK YOU
 target/
+
