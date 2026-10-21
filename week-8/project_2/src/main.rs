@@ -8,8 +8,7 @@ fn main() {
 
     let years: u32 = loop {
         let mut input2 = String::new();
-        println!("How many years of experience do you have, {}?", name);
-        std::io::stdin().read_line(&mut input2).expect("Failed to read input");
+        println!("How many years of experience do you have, {}?", name);        std::io::stdin().read_line(&mut input2).expect("Failed to read input");
 
         match input2.trim().parse::<u32>() {
             Ok(n) => break n,
@@ -67,3 +66,4 @@ fn main() {
     println!("Thank you for participating.\nPlease come again");
 }
 //pretier extension was used here
+// i hate claude :(
