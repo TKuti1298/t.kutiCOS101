@@ -14,7 +14,7 @@ fn main(){
 for i in 0..students.len() {
     println!("{}, {}, {}, {}", students[i].0, students[i].1, students[i].2, students[i].3);
 }
-    let mut file = std::fs::File::create("PAU_SIMS.csv").expect("create failed");444444444444
+    let mut file = std::fs::File::create("PAU_SIMS.csv").expect("create failed");
     file.write_all(header.as_bytes()).expect("write header failed");
 
 for i in 0..students.len() {
